@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ROPship</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  <!--
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="/css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="/css/bootstrap.css">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="/css/superfish.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="/css/flexslider.css">
+
+	<link rel="stylesheet" href="/css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="/js/respond.min.js"></script>
+	<![endif]-->
+    <!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- masonry -->
+	<script src="/js/jquery.masonry.min.js"></script>
+	<!-- MAIN JS -->
+	<script src="/js/main.js"></script>
+    <script>
+        setTimeout(
+            function() {
+              $('#message_panel').slideUp();
+            }, 5000);
+    </script>
+	</head>
+	<body>
+
+		<header id="fh5co-header" role="banner">
+			<div class="container text-center" style="z-index: 1;">
+                <div id="message_panel" ></div>
+				<div id="fh5co-logo">
+					<a href="/"><img src="/images/logo.png"></a>
+				</div>
+
+				<nav id="nav_panel">
+					<ul>
+                        <li><a id="upload" href="/rs" >Home</a></li>
+						<li><a id="results" href="/rs/upload" >Upload ROP</a></li>
+                        <!--<li><a id="login" href="#"   onclick="return document.getElementById('login_panel').style.display = 'block';">Author Login</a></li>-->
+                        <!--<li><a id="logout" href="logout"   >Logout</a></li>-->
+					</ul>
+				</nav>
+			</div>
+
+            <div id="login_panel"> <div class="login1" >
+                <div class="container-login1">
+                    <form class="login1-form validate-form" action="/rs/login" method="POST">
+                        <div class="wrap-input1 validate-input" data-validate = "Name is required">
+                            <input class="input1" type="text" name="username" placeholder="Username">
+                            <span class="shadow-input1"></span>
+                        </div>
+
+                        <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                            <input class="input1" type="password" name="password" placeholder="Password">
+                            <span class="shadow-input1"></span>
+                        </div>
+
+                        <div class="container-login1-form-btn">
+                            <input type="submit" value="Login" class="login1-form-btn" />
+
+                        </div>
+                    </form>
+                </div>
+            </div></div>
+		</header>
+		<!-- END #fh5co-header -->
+<script>$('#message_panel').hide();</script>
+        <div class="container-fluid pt70 pb70">
+            <div id="fh5co-projects-feed" class="fh5co-projects-feed clearfix masonry"> 
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '1', 'relative_vis_fp': '/images/vis_round_1.mpg', 'result': {'team_id': 2, 'gamelog': 'turned\n', 'kills': 21, 'moves': 56, 'shots_fired': 69, 'seconds_lived': 159, 'dead': True, 'killed_by': 0}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_1.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 1</h2>
+                        Seconds Survived: 159<BR>
+                        Kills: 21                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '11', 'relative_vis_fp': '/images/vis_round_11.mpg', 'result': {'team_id': 2, 'gamelog': 'shoot\n', 'kills': 0, 'moves': 0, 'shots_fired': 1, 'seconds_lived': 1, 'dead': False}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_11.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 11</h2>
+                        Seconds Survived: 1<BR>
+                        Kills: 0                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '16', 'relative_vis_fp': '/images/vis_round_16.mpg', 'result': {'team_id': 2, 'gamelog': 'turned\n', 'kills': 17, 'moves': 56, 'shots_fired': 64, 'seconds_lived': 161, 'dead': True, 'killed_by': 2}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_16.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 16</h2>
+                        Seconds Survived: 161<BR>
+                        Kills: 17                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '23', 'relative_vis_fp': '/images/vis_round_23.mpg', 'result': {'team_id': 2, 'gamelog': 'turned\n', 'kills': 1, 'moves': 0, 'shots_fired': 1, 'seconds_lived': 5, 'dead': False}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_23.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 23</h2>
+                        Seconds Survived: 5<BR>
+                        Kills: 1                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '24', 'relative_vis_fp': '/images/vis_round_24.mpg', 'result': {'team_id': 2, 'gamelog': 'moved\n', 'kills': 0, 'moves': 6, 'shots_fired': 0, 'seconds_lived': 6, 'dead': True, 'killed_by': 4}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_24.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 24</h2>
+                        Seconds Survived: 6<BR>
+                        Kills: 0                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '20', 'relative_vis_fp': '/images/vis_round_20.mpg', 'result': {'team_id': 2, 'gamelog': 'turned\n', 'kills': 26, 'moves': 61, 'shots_fired': 54, 'seconds_lived': 156, 'dead': True, 'killed_by': 4}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_20.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 20</h2>
+                        Seconds Survived: 156<BR>
+                        Kills: 26                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '17', 'relative_vis_fp': '/images/vis_round_17.mpg', 'result': {'team_id': 2, 'gamelog': 'moved\n', 'kills': 3, 'moves': 7, 'shots_fired': 2, 'seconds_lived': 10, 'dead': False}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_17.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 17</h2>
+                        Seconds Survived: 10<BR>
+                        Kills: 3                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '18', 'relative_vis_fp': '/images/vis_round_18.mpg', 'result': {'team_id': 2, 'gamelog': 'shoot\n', 'kills': 1, 'moves': 3, 'shots_fired': 1, 'seconds_lived': 4, 'dead': False}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_18.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 18</h2>
+                        Seconds Survived: 4<BR>
+                        Kills: 1                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '21', 'relative_vis_fp': '/images/vis_round_21.mpg', 'result': {'team_id': 2, 'gamelog': 'turned\n', 'kills': 2, 'moves': 2, 'shots_fired': 5, 'seconds_lived': 10, 'dead': False}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_21.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 21</h2>
+                        Seconds Survived: 10<BR>
+                        Kills: 2                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '13', 'relative_vis_fp': '/images/vis_round_13.mpg', 'result': {'team_id': 2, 'gamelog': 'moved\n', 'kills': 1, 'moves': 1, 'shots_fired': 0, 'seconds_lived': 1, 'dead': False}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_13.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 13</h2>
+                        Seconds Survived: 1<BR>
+                        Kills: 1                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '5', 'relative_vis_fp': '/images/vis_round_5.mpg', 'result': {'team_id': 2, 'gamelog': 'turned\n', 'kills': 19, 'moves': 49, 'shots_fired': 65, 'seconds_lived': 157, 'dead': True, 'killed_by': 2}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_5.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 5</h2>
+                        Seconds Survived: 157<BR>
+                        Kills: 19                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '12', 'relative_vis_fp': '/images/vis_round_12.mpg', 'result': {'team_id': 2, 'gamelog': 'shoot\n', 'kills': 1, 'moves': 1, 'shots_fired': 2, 'seconds_lived': 3, 'dead': False}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_12.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 12</h2>
+                        Seconds Survived: 3<BR>
+                        Kills: 1                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '25', 'relative_vis_fp': '/images/vis_round_25.mpg', 'result': {'team_id': 2, 'gamelog': 'shoot\n', 'kills': 26, 'moves': 66, 'shots_fired': 51, 'seconds_lived': 163, 'dead': True, 'killed_by': 0}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_25.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 25</h2>
+                        Seconds Survived: 163<BR>
+                        Kills: 26                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '27', 'relative_vis_fp': '/images/vis_round_27.mpg', 'result': {'team_id': 2, 'gamelog': 'moved\n', 'kills': 0, 'moves': 1, 'shots_fired': 2, 'seconds_lived': 3, 'dead': False}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_27.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 27</h2>
+                        Seconds Survived: 3<BR>
+                        Kills: 0                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '9', 'relative_vis_fp': '/images/vis_round_9.mpg', 'result': {'team_id': 2, 'gamelog': 'turned\n', 'kills': 21, 'moves': 66, 'shots_fired': 51, 'seconds_lived': 160, 'dead': True, 'killed_by': 0}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_9.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 9</h2>
+                        Seconds Survived: 160<BR>
+                        Kills: 21                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '8', 'relative_vis_fp': '/images/vis_round_8.mpg', 'result': {'team_id': 2, 'gamelog': 'shoot\n', 'kills': 0, 'moves': 1, 'shots_fired': 2, 'seconds_lived': 4, 'dead': False}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_8.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 8</h2>
+                        Seconds Survived: 4<BR>
+                        Kills: 0                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '15', 'relative_vis_fp': '/images/vis_round_15.mpg', 'result': {'team_id': 2, 'gamelog': 'died\n', 'kills': 2, 'moves': 7, 'shots_fired': 3, 'seconds_lived': 11, 'dead': True, 'killed_by': 0}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_15.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 15</h2>
+                        Seconds Survived: 11<BR>
+                        Kills: 2                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '10', 'relative_vis_fp': '/images/vis_round_10.mpg', 'result': {'team_id': 2, 'gamelog': 'died\n', 'kills': 22, 'moves': 68, 'shots_fired': 57, 'seconds_lived': 155, 'dead': True, 'killed_by': 2}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_10.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 10</h2>
+                        Seconds Survived: 155<BR>
+                        Kills: 22                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '4', 'relative_vis_fp': '/images/vis_round_4.mpg', 'result': {'team_id': 2, 'gamelog': 'turned\n', 'kills': 0, 'moves': 0, 'shots_fired': 0, 'seconds_lived': 1, 'dead': False}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_4.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 4</h2>
+                        Seconds Survived: 1<BR>
+                        Kills: 0                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '19', 'relative_vis_fp': '/images/vis_round_19.mpg', 'result': {'team_id': 2, 'gamelog': 'shoot\n', 'kills': 0, 'moves': 1, 'shots_fired': 2, 'seconds_lived': 5, 'dead': False}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_19.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 19</h2>
+                        Seconds Survived: 5<BR>
+                        Kills: 0                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '22', 'relative_vis_fp': '/images/vis_round_22.mpg', 'result': {'team_id': 2, 'gamelog': 'moved\n', 'kills': 18, 'moves': 62, 'shots_fired': 55, 'seconds_lived': 158, 'dead': True, 'killed_by': 0}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_22.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 22</h2>
+                        Seconds Survived: 158<BR>
+                        Kills: 18                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '6', 'relative_vis_fp': '/images/vis_round_6.mpg', 'result': {'team_id': 2, 'gamelog': 'turned\n', 'kills': 26, 'moves': 56, 'shots_fired': 54, 'seconds_lived': 151, 'dead': True, 'killed_by': 0}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_6.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 6</h2>
+                        Seconds Survived: 151<BR>
+                        Kills: 26                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '3', 'relative_vis_fp': '/images/vis_round_3.mpg', 'result': {'team_id': 2, 'gamelog': 'turned\n', 'kills': 2, 'moves': 2, 'shots_fired': 1, 'seconds_lived': 4, 'dead': False}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_3.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 3</h2>
+                        Seconds Survived: 4<BR>
+                        Kills: 2                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '14', 'relative_vis_fp': '/images/vis_round_14.mpg', 'result': {'team_id': 2, 'gamelog': 'moved\n', 'kills': 16, 'moves': 60, 'shots_fired': 61, 'seconds_lived': 156, 'dead': True, 'killed_by': 0}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_14.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 14</h2>
+                        Seconds Survived: 156<BR>
+                        Kills: 16                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '26', 'relative_vis_fp': '/images/vis_round_26.mpg', 'result': {'team_id': 2, 'gamelog': 'shoot\n', 'kills': 0, 'moves': 5, 'shots_fired': 5, 'seconds_lived': 14, 'dead': True, 'killed_by': 2}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_26.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 26</h2>
+                        Seconds Survived: 14<BR>
+                        Kills: 0                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '7', 'relative_vis_fp': '/images/vis_round_7.mpg', 'result': {'team_id': 2, 'gamelog': 'shoot\n', 'kills': 21, 'moves': 59, 'shots_fired': 64, 'seconds_lived': 159, 'dead': True, 'killed_by': 0}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_7.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 7</h2>
+                        Seconds Survived: 159<BR>
+                        Kills: 21                        
+                    </div>
+
+                    <div class="fh5co-project masonry-brick">
+                        <!--<img src="/images/{'round_id': '2', 'relative_vis_fp': '/images/vis_round_2.mpg', 'result': {'team_id': 2, 'gamelog': 'shoot\n', 'kills': 23, 'moves': 64, 'shots_fired': 52, 'seconds_lived': 159, 'dead': True, 'killed_by': 0}}" width=500 >-->
+                        <video width=500>
+                            <source src="/images/vis_round_2.mpg" type="video/mp4"></source> 
+                        </video><BR>
+                        <h2>Round 2</h2>
+                        Seconds Survived: 159<BR>
+                        Kills: 23                        
+                    </div>
+
+            </div>
+        </div> 
+        
+
+
+	</body>
+</html>
