@@ -4,7 +4,7 @@ Dogooos is a dog rating and commenting website.  The post authors add pictures o
 ![Dogooos](https://github.com/o-o-overflow/dc2020q-dogooos-public/raw/master/dogooos_site.png)
 
 The exploitation of the website required two steps. 
-#Stage One
+# Stage One
 The attacker gains access to an author account by exploiting a comment feature that allowed commenters to refer to the rating used in a particular post. 
 ```
 fmt_cmt = cmt.comment.format(rating=self.__dict__)
