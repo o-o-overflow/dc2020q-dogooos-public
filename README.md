@@ -14,10 +14,10 @@ However, the feature allows access to the __globals__ where demidog's login cred
 {rating[comments][0].__init__.__globals__[post_results]}
 ```
 
-#Stage Two 
+# Stage Two 
 Using demidog's account the attacker was able to create new posts and create new users. In the function `get_user_info()` the function uses f() instead of f"" to use f-string functionality. Unfortunately, this was "legacy" code left from the site's f-string use in Python 2. The library implemented the f-string functionality by using an `eval`. As a result, if the attacker created a user with a name of  `{open('flag').read()}` upon loggin in with the user's account the attacker would be presented with the flag.
 
-#Side note
+# Side note
 Although there was a promising route in the script for executing local commands `/runcmd`. It would error because of the seccomp filter which prevented execve.  
 
 
